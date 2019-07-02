@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+</head>
+<input type="text" id="text">
+<button onclick="find()">Finding</button>
+<body>
+<script>
+    function find() {
+        let arrEng = ['hello', 'morning', 'afternoon', 'evening'];
+        let text = document.getElementById('text').value;
+        let arrVie = ['Xin Chao', 'buoi sang', 'buoi chieu', 'buoi toi'];
+        for (let i = 0; i < arrEng.length; i++) {
+            if (text == arrEng[i]) {
+                alert(arrVie[i]);
+                break;
+            } else if(text !== arrEng[i]){
+                alert("word is not found");
+                break;
+            }
+        }
+    }
+</script>
+</body>
+</html>
